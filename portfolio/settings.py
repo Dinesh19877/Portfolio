@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-k_x=3h()kk^kapa=5#!4m_e^ld2d9!r-f8sg$1d48v_yr0a**%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ['dineshsharma.onrender.com', 'localhost', '127.0.0.1']
 
 
 
@@ -132,7 +133,7 @@ STATICFILES_DIRS = [
 ]
 
 
-ALLOWED_HOSTS = ['dineshsharma.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
