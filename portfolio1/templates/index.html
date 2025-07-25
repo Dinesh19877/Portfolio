@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dinesh Sharma</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'styles.css' %}?v2">
+
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="{% static 'img/IMG_1007.JPG' %}"  alt="Dinesh Sharma">
+
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Dinesh Sharma">Dinesh Sharma</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dineshsharama7799@gmail.com" class="contact-link">dineshsharama7799@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+9779847019877" class="contact-link">+9779847019877</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time >july 22, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Sunwal-7, Nawalparasi,Nepal</address>
+            </div>
+
+          </li>
+         
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/paudelsharmadinesh/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Dinesh19877" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/dinesh_sharma_poudel/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skill</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+<li class="navbar-item">
+  <a class="navbar-link" href="{% static 'img/cv.pdf' %}" download>CV</a>
+</li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          
+
+          <p>
+            Hello! I'm an IT undergraduate from Nepal with a passion for web development. I have hands-on experience building real-world projects using Django, including an e-commerce platform and a hospital management system featuring face recognition for attendance. My skills include Python, database management, and creating practical solutions that drive real results. With a background in management, I combine technical expertise with strategic thinking. I'm always eager to learn and expand my skill set, focusing on crafting impactful projects that showcase my abilities.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{% static  'img/icon-design.svg'%}
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="{% static  'img/icon-dev.svg' %}" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            
+
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+             
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          
+
+          </div>
+
+          <ul class="project-list" style="margin-top: 2rem;">
+
+        
+        
+      
+     {% for project in projects %}
+  <li class="project-item active"
+      onclick='showProjectDetails({{ project.id }})'>
+    <a href="javascript:void(0);">
+      <figure class="project-img">
+        <div class="project-item-icon-box">
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <img src="{{ project.image.url }}" alt="{{ project.title }}" loading="lazy">
+      </figure>
+      <h3 class="project-title">{{ project.title }}</h3>
+      <p class="project-category">{{ project.description|truncatechars:50 }}</p>
+    </a>
+
+    <!-- Hidden JSON for each project -->
+    <script type="application/json" id="project-data-{{ project.id }}">
+      {
+        "title": "{{ project.title|escapejs }}",
+        "description": "{{ project.description|escapejs }}",
+        "main_image": "{{ project.image.url }}",
+        "created_at": "{{ project.created_at|date:'Y-m-d H:i' }}",
+        "images": [{% for img in project.images.all %}"{{ img.image.url }}"{% if not forloop.last %}, {% endif %}{% endfor %}]
+      }
+    </script>
+  </li>
+{% endfor %}
+
+          </ul>
+
+<div id="project-sidebar" style="display:none; position:fixed; top:0; right:0; width:400px; background:#fff; height:100%; overflow:auto; padding:20px; box-shadow:-2px 0 8px rgba(0,0,0,0.2);">
+  <h2 id="sidebar-title"></h2>
+  <img id="sidebar-main-image" src="" style="width:100%; border-radius:10px;" />
+
+<div id="sidebar-images"></div>
+  <p id="sidebar-description"></p>
+  <p><small id="sidebar-date"></small></p>
+  <br>
+  <button onclick="document.getElementById('project-sidebar').style.display='none'">Close</button>
+</div>
+
+
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+      SKill
+      -->
+
+      <article class="blog" data-page="skill">
+
+        <header style="margin-bottom: 2rem;">
+          <h2 class="h2 article-title">Skill</h2>
+        </header>
+
+        <section class="blog-posts">
+
+     <ul class="service-list">
+
+
+<li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/download.svg' %}" alt="JavaScript icon" width="20" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">JavaScript</h4>
+      <p class="service-item-text">
+        Experienced in modern JavaScript features for interactive web apps.
+      </p>
+    </div>
+  </li>
+
+  <li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/download (1).svg' %}" alt="HTML5 & CSS3 icon" width="25" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">HTML5 & CSS3</h4>
+      <p class="service-item-text">
+        Skilled in building responsive and semantic web layouts.
+      </p>
+    </div>
+  </li>
+
+  <li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/download (2).svg' %}" alt="React.js icon" width="40" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">React.js</h4>
+      <p class="service-item-text">
+        Building dynamic and efficient single-page applications with React.
+      </p>
+    </div>
+  </li>
+
+  <li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/python-svgrepo-com.svg' %}" alt="Python icon" width="60" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">Python (Django)</h4>
+      <p class="service-item-text">
+        Backend development with Python frameworks for robust web apps.
+      </p>
+    </div>
+  </li>
+
+  
+ <li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/java-4-logo-svgrepo-com.svg' %}" alt="Java icon" width="40" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">Java</h4>
+      <p class="service-item-text">
+        Strong understanding of Java programming for desktop and web applications.
+      </p>
+    </div>
+  </li>
+
+  <li class="service-item">
+    <div class="service-icon-box">
+      <img src="{% static 'img/linux-svgrepo-com.svg' %}" alt="Linux icon" width="40" />
+    </div>
+    <div class="service-content-box">
+      <h4 class="h4 service-item-title">Linux</h4>
+      <p class="service-item-text">
+        Comfortable with Linux command line, shell scripting, and system administration.
+      </p>
+    </div>
+  </li>
+
+
+
+
+
+
+
+
+
+
+
+
+           
+            
+
+
+          </ul>
+
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+          
+              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3231.6322799966433!2d83.56423207507696!3d27.61023697623839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDM2JzM2LjkiTiA4M8KwMzQnMDAuNSJF!5e1!3m2!1sen!2snp!4v1753415135147!5m2!1sen!2snp"  width="400" height="300"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+
+<form id="contact-form" class="form">
+  <div class="input-wrapper">
+    <input type="text" name="fullname" class="form-input" placeholder="Full name" required>
+    <input type="email" name="email" class="form-input" placeholder="Email address" required>
+  </div>
+
+  <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+
+ <button class="form-btn" type="submit" id="submit-btn">
+  <ion-icon name="paper-plane"></ion-icon>
+  <span id="btn-text">Send Message</span>
+  <span id="btn-loader" style="display: none; margin-left: 8px;">⏳</span>
+</button>
+</form>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const submitBtn = document.getElementById('submit-btn');
+  const btnText = document.getElementById('btn-text');
+  const btnLoader = document.getElementById('btn-loader');
+
+  // Show loading animation
+  btnText.style.display = 'none';
+  btnLoader.style.display = 'inline';
+
+  const formData = new FormData(this);
+
+  fetch('/submit-form/', {
+    method: 'POST',
+    body: formData,
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Hide loading animation
+    btnText.style.display = 'inline';
+    btnLoader.style.display = 'none';
+
+    if (data.status === 'success') {
+      alert("Message sent  successfully!");
+      this.reset();
+    } else {
+      alert("Failed to send message.");
+    }
+  })
+  .catch(() => {
+    // On error, also hide loader
+    btnText.style.display = 'inline';
+    btnLoader.style.display = 'none';
+    alert("Something went wrong.");
+  });
+});
+</script>
+
+
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="{% static 'script.js' %}?v=2"></script>
+
+
+<script>
+
+
+  function validateForm() {
+    const name = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    // Full name: at least 2 characters, letters only
+    const nameRegex = /^[A-Za-z\s]{2,}$/;
+    if (!nameRegex.test(name)) {
+      alert("Please enter a valid name (only letters, at least 2 characters).");
+      return false;
+    }
+
+    // Email: must be Gmail
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid Gmail address.");
+      return false;
+    }
+
+    // Message: at least 5 words
+    const wordCount = message.split(/\s+/).filter(word => word.length > 0).length;
+    if (wordCount < 5) {
+      alert("Message must contain at least 5 words.");
+      return false;
+    }
+
+    return true; // Form is valid
+  }
+</script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
