@@ -132,7 +132,7 @@ STATICFILES_DIRS = [
 ]
 
 
-ALLOWED_HOSTS = ['portfolio-4-zzw8.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['dineshsharma.onrender.com', 'localhost', '127.0.0.1']
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
